@@ -29,7 +29,7 @@ require("lazy").setup({
         find_files = {
           follow = true,
           hidden = true,
-          find_command = { "fd", "--exclude", ".git" },
+          find_command = { "fd", "--type", "f", "--exclude", ".git" },
         },
         current_buffer_fuzzy_find = {
           previewer = false,
