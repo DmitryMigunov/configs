@@ -2,17 +2,17 @@
 size = 18
 
 [font.normal]
-family = "IBM Plex Mono"
+family = "BlexMono Nerd Font Mono"
 style = "Regular"
 
 [font.italic]
-family = "IBM Plex Mono"
+family = "BlexMono Nerd Font Mono"
 style = "Regular"
 
 [font.bold]
-family = "IBM Plex Mono"
+family = "BlexMono Nerd Font Mono"
 style = "Regular"
 
 [font.bold_italic]
-family = "IBM Plex Mono"
+family = "BlexMono Nerd Font Mono"
 style = "Italic"
