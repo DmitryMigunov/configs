@@ -133,28 +133,26 @@ require("lazy").setup({
   },
 })
 
-vim.opt.foldenable = false
-vim.opt.scrolloff = 2
-vim.opt.wrap = false
 vim.opt.clipboard = { "unnamed", "unnamedplus" }
 vim.opt.colorcolumn = "80"
+vim.opt.expandtab = true
+vim.opt.foldenable = false
+vim.opt.ignorecase = true
 vim.opt.ignorecase = true
 vim.opt.linebreak = true
 vim.opt.list = true
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.expandtab = true
-vim.opt.splitright = true
-vim.opt.splitbelow = true
+vim.opt.scrolloff = 2
 vim.opt.shiftwidth = 2
-vim.opt.softtabstop = 2
-vim.opt.tabstop = 4
-
-vim.opt.ignorecase = true
 vim.opt.smartcase = true
-
+vim.opt.softtabstop = 2
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.tabstop = 4
+vim.opt.undofile = true
 vim.opt.vb = true
-
+vim.opt.wrap = false
 
 -- colors
 vim.opt.termguicolors = true
