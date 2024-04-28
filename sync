@@ -1,0 +1,50 @@
+#!/bin/bash -e
+
+function info {
+    printf "[\033[0;32minfo\033[0m] %s\n" "$*"
+}
+
+
+function arch_install_yay {
+    if ! pacman -Qq yay > /dev/null; then
+        info "Installing yay"
+        sudo pacman --noconfirm -S --needed base-devel git
+        rm -rf /tmp/yay
+        git clone https://aur.archlinux.org/yay.git /tmp/yay
+        cd /tmp/yay && makepkg -si --noconfirm
+        rm -rf /tmp/yay
+    fi
+}
+
+function arch_delete_packages {
+    commits=$(git log --reverse --pretty=format:%H -- packages.txt)
+    declare -a packages_were_installed
+    for commit in $commits; do
+        packages=$(git show "$commit":packages.txt)
+        while IFS= read -r package; do
+            packages_were_installed+=("$package")
+        done <<< "$packages"
+    done
+
+    history=$(printf "%s\n" "${packages_were_installed[@]}" | sort -u | uniq)
+
+    deleted_packages=$(diff -u <(echo "$history") <(sort -u packages.txt | uniq) | grep '^-[^-]' | sed 's/^-//')
+
+    for pkg in $deleted_packages; do
+        yay -Rns --noconfirm "$pkg" &> /dev/null || true
+    done
+}
+
+
+if [[ "$(uname -s)" == "Linux" && -f /etc/arch-release ]]; then
+    arch_install_yay
+    info "Updating all installed packages"
+    yay --noconfirm -Syu
+    info "Installing all required packages"
+    yay -S --noconfirm --ask=4 --needed - < packages.txt
+    info "Deleting uninstalled packages"
+    arch_delete_packages
+fi
+
+info "Syncing configs"
+stow -t ~ -vS configs

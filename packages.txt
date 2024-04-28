@@ -1,3 +1,15 @@
+alacritty
+bat
+curl
 eza
+fzf
+git
+jq
+neovim
+ripgrep
 stow
+tree
 ttf-ibmplex-mono-nerd
+wget
+yq
+zig
