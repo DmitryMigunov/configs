@@ -1,0 +1,61 @@
+Xcursor.size: 16
+Xcursor.theme: default
+
+Xft.lcdfilter: lcddefault
+Xft.antialias: true
+Xft.autohint: false
+Xft.hinting: true
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+
+xterm*termName: xterm-256color
+
+#define base00 #1C1917
+#define base01 #DE6E7C
+#define base02 #819B69
+#define base03 #B77E64
+#define base04 #6099C0
+#define base05 #B279A7
+#define base06 #66A5AD
+#define base07 #B4BDC3
+#define base08 #403833
+#define base09 #E8838F
+#define base0A #8BAE68
+#define base0B #D68C67
+#define base0C #61ABDA
+#define base0D #CF86C1
+#define base0E #65B8C1
+#define base0F #888F94
+
+*.foreground:   base05
+#ifdef background_opacity
+*.background:   [background_opacity]base00
+#else
+*.background:   base00
+#endif
+*.cursorColor:  base05
+
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
+
+*.color8:       base03
+*.color9:       base08
+*.color10:      base0B
+*.color11:      base0A
+*.color12:      base0D
+*.color13:      base0E
+*.color14:      base0C
+*.color15:      base07
+
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06

@@ -3,11 +3,17 @@ bat
 curl
 eza
 fish
+flameshot
 fzf
 git
+i3lock-fancy-git
 jq
 neovim
+numlockx
+polybar
 ripgrep
+rofi
+rofi-calc
 stow
 tree
 ttf-ibmplex-mono-nerd
