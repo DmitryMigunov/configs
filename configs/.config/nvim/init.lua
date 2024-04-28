@@ -27,11 +27,13 @@ require("lazy").setup({
       },
       pickers = {
         find_files = {
+          previewer = false,
           follow = true,
           hidden = true,
+          layout_strategy = "horizontal",
           find_command = { "fd", "--type", "f", "--exclude", ".git" },
         },
-        current_buffer_fuzzy_find = {
+        buffers = {
           previewer = false,
         },
       },
