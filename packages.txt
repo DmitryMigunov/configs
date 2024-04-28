@@ -2,6 +2,7 @@ alacritty
 bat
 curl
 eza
+fish
 fzf
 git
 jq

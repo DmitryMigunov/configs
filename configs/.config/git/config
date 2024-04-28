@@ -1,0 +1,21 @@
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
+[push]
+	default = current
+[pull]
+	rebase = true
+[core]
+	editor = nvim
+[init]
+	defaultBranch = master
+[ui "color"]
+	ui = always
+[color]
+	ui = true
+[help]
+	autocorrect = 1
+[diff]
+	algorithm = histogram
+	indentHeuristic = true

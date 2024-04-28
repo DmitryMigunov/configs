@@ -1,6 +1,7 @@
 abbr -a e nvim
 abbr -a vim nvim
 abbr -a g git
+abbr -a ggpull 'git pull origin'
 abbr -a l eza
 abbr -a ls eza
 abbr -a ll 'eza -l'
