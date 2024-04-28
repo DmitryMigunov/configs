@@ -46,9 +46,7 @@ require("lazy").setup({
   "itchyny/lightline.vim",
   {
     "cappyzawa/trim.nvim",
-    opts = {
-      highlight = true,
-    },
+    opts = {},
   },
   "tpope/vim-sleuth",
   {
