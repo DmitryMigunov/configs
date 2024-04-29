@@ -13,6 +13,46 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  -- for fun
+  {
+    "folke/drop.nvim",
+    event = "VimEnter",
+    opts = {
+      theme = "leaves",
+      max = 10,
+      interval = 100,
+    },
+  },
+  {
+    "nvimdev/dashboard-nvim",
+    opts = {
+      config = {
+        disable_move = true,
+        packages = { enable = false },
+        project = { enable = false },
+        shortcut = {},
+        footer = {},
+        header = {
+          [[⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⡿⠿⢿⣿⣿⣿⣿⣿⣿]],
+          [[⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⠛⠉⠉⠉⠙⠻⣅⠀⠈⢧⠀⠈⠛⠉⠉⢻⣿⣿]],
+          [[⣿⣿⣿⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⣤⡶⠟⠀⠀⣈⠓⢤⣶⡶⠿⠛⠻⣿]],
+          [[⣿⣿⣿⣿⣿⢣⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣀⣴⠶⠿⠿⢷⡄⠀⠀⢀⣤⣾⣿]],
+          [[⣿⣿⣿⣿⣡⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣦⣤⣤⡀⠀⢷⡀⠀⠀⣻⣿⣿]],
+          [[⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡈⠛⠶⠛⠃⠈⠈⢿⣿⣿]],
+          [[⣿⣿⠟⠘⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⠀⠀⠀⠀⠀⠀⣧⠀⠀⠀⠀⠀⠀⠈⣿⣿]],
+          [[⣿⠏⠀⠁⠀⠀⠀⠀⠀⠀⠀⢀⣶⡄⠀⠀⠀⠀⠀⠀⣡⣄⣿⡆⠀⠀⠀⠀⣿⣿]],
+          [[⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠚⠛⠛⢛⣲⣶⣿⣷⣉⠉⢉⣥⡄⠀⠀⠀⠨⣿⣿]],
+          [[⡇⢠⡆⠀⠀⢰⠀⠀⠀⠀⢸⣿⣧⣠⣿⣿⣿⣿⣿⣿⣷⣾⣿⡅⠀⠀⡄⠠⢸⣿]],
+          [[⣧⠸⣇⠀⠀⠘⣤⡀⠀⠀⠘⣿⣿⣿⣿⣿⠟⠛⠻⣿⣿⣿⡿⢁⠀⠀⢰⠀⢸⣿]],
+          [[⣿⣷⣽⣦⠀⠀⠙⢷⡀⠀⠀⠙⠻⠿⢿⣷⣾⣿⣶⠾⢟⣥⣾⣿⣧⠀⠂⢀⣿⣿]],
+          [[⣿⣿⣿⣿⣷⣆⣠⣤⣤⣤⣀⣀⡀⠀⠒⢻⣶⣾⣿⣿⣿⣿⣿⣿⣿⢀⣀⣾⣿⣿]],
+        }
+      },
+    },
+    dependencies = {
+      { "nvim-tree/nvim-web-devicons" }
+    },
+  },
   {
     "nvim-telescope/telescope.nvim",
     tag = "0.1.6",
@@ -132,6 +172,10 @@ require("lazy").setup({
       wrap = false,
     },
     config = function(_, opts) require'lsp_signature'.setup(opts) end
+  },
+  {
+    "nacro90/numb.nvim",
+    opts = {},
   },
 })
 
