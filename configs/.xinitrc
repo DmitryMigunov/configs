@@ -4,6 +4,6 @@ xrdb -merge .Xresources
 lxsession &
 numlockx &
 
-umonitor --listen --quiet
+autorandr --change
 
 exec i3
