@@ -17,6 +17,8 @@ rofi-calc
 stow
 tree
 ttf-ibmplex-mono-nerd
+umonitor-git
 wget
+xrandr
 yq
 zig
