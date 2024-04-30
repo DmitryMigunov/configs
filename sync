@@ -44,6 +44,8 @@ if [[ "$(uname -s)" == "Linux" && -f /etc/arch-release ]]; then
     yay -S --noconfirm --ask=4 --needed - < packages.txt
     info "Deleting uninstalled packages"
     arch_delete_packages
+    info "Making udev-monitor"
+    (cd configs/bin/udev-monitor && make)
 fi
 
 info "Syncing configs"
