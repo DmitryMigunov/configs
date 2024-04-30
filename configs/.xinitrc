@@ -1,3 +1,5 @@
+#!/bin/sh
+
 xset b off
 xrdb -merge .Xresources
 

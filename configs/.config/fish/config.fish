@@ -6,6 +6,8 @@ abbr -a l eza
 abbr -a ls eza
 abbr -a ll 'eza -l'
 abbr -a lll 'eza -la'
+abbr -a k kubectl
+abbr -a drain 'kubectl drain --force --ignore-daemonsets --delete-emptydir-data --grace-period=10'
 
 set -g fish_prompt_pwd_dir_length 3
 
