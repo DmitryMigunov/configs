@@ -51,8 +51,9 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
-set $Locker i3lock-fancy -gp && sleep 1
+set $Locker i3lock-fancy -gp
 bindsym $mod+shift+x exec $Locker
+exec_always --no-startup-id xss-lock -- $Locker &
 
 set $ws1 "1"
 set $ws2 "2"

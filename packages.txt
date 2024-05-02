@@ -1,4 +1,5 @@
 alacritty
+autorandr-git
 bat
 curl
 eza
@@ -17,8 +18,8 @@ rofi-calc
 stow
 tree
 ttf-ibmplex-mono-nerd
-autorandr-git
 wget
 xrandr
+xss-lock
 yq
 zig

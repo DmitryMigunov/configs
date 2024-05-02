@@ -1,3 +1,5 @@
+set fish_greeting "🐟"
+
 abbr -a e nvim
 abbr -a vim nvim
 abbr -a g git
