@@ -17,6 +17,7 @@ rofi
 rofi-calc
 stow
 tree
+ttf-font-awesome
 ttf-ibmplex-mono-nerd
 wget
 xrandr
