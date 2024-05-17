@@ -9,6 +9,7 @@ fzf
 git
 i3lock-fancy-git
 jq
+monaspace-font
 neovim
 numlockx
 polybar
@@ -19,6 +20,7 @@ stow
 tree
 ttf-font-awesome
 ttf-ibmplex-mono-nerd
+ttf-iosevka-nerd
 wget
 xrandr
 xss-lock
