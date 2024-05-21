@@ -3,6 +3,7 @@ exec $HOME/bin/init-input-devices.sh
 exec_always --no-startup-id $HOME/bin/polybar.sh
 exec --no-startup-id blueman-applet
 exec --no-startup-id sleep 1 && $HOME/bin/init-input-devices.sh
+exec --no-startup-id $HOME/bin/wallpaper.sh
 exec --no-startup-id $HOME/bin/udev-monitor/udev-monitor -s usb -e $HOME/bin/init-input-devices.sh
 set $mod Mod4
 

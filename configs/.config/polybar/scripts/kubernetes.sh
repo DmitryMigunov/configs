@@ -8,7 +8,7 @@ while true; do
   ns=$(kubens -c | tr -d '\n')
 
   case "$cx" in
-    *"-prod")
+    *"-prod"|"production")
       sleepseconds=1
       if [ "$toggle" == "true" ]; then
         toggle=false
