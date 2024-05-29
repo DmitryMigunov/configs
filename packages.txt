@@ -7,7 +7,7 @@ fish
 flameshot
 fzf
 git
-i3lock-fancy-git
+i3lock-fancy-rapid-git
 jq
 monaspace-font
 neovim
